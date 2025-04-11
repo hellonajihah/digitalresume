@@ -503,6 +503,7 @@ em {
 
 @media (max-width: 768px) {
     .profile-img {
+        margin-top: 2rem;     /* Moves image down from the top */
         width: 150px; /* Smaller size for phones */
         height: 150px;
     }
