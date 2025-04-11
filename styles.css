@@ -165,8 +165,10 @@ body {
 
 
 .hero {
-    min-height: 360vh; /* Minimum height of full viewport, can grow if needed */
-    height: auto;      /* Allows the section to expand based on content */
+    min-height: 100vh; /* Use min-height instead of fixed height */
+    height: auto;
+    padding: 4rem 2rem; /* Add padding */
+    gap: 1.5rem; /* Add gap between flex items */
     display: flex;
     flex-direction: column;
     justify-content: center;
