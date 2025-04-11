@@ -490,7 +490,7 @@ em {
 
 @media (max-width: 768px) {
     .hero {
-        /*height: 100vh;*/
+        height: 160vh;
         background-attachment: scroll;
     }
     
