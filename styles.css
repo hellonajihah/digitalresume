@@ -166,8 +166,8 @@ body {
 
 .hero {
     min-height: 100vh; /* Use min-height instead of fixed height */
-    height: fixed;
-    padding: 1rem 0.5rem; /* Add padding */
+    height: auto;
+    padding: 4rem 2rem; /* Add padding */
     gap: 1.5rem; /* Add gap between flex items */
     display: flex;
     flex-direction: column;
@@ -490,7 +490,8 @@ em {
 
 @media (max-width: 768px) {
     .hero {
-        /* height: 100vh; removed, inherited min-height: 100vh and height: auto work fine */
+        min-height: 90vh; /* Slightly shorter on mobile */
+        padding: 2rem 1rem;
         background-attachment: scroll;
     }
     /* other styles */
@@ -534,7 +535,7 @@ em {
 
 @media (max-width: 600px) {
     .nav-brand {
-        font-size: 1.0rem;
+        font-size: 2.0rem;
     }
 
     .social-links a {
