@@ -165,7 +165,7 @@ body {
 
 
 .hero {
-    min-height: 160vh; /* Minimum height of full viewport, can grow if needed */
+    min-height: 130vh; /* Minimum height of full viewport, can grow if needed */
     height: auto;      /* Allows the section to expand based on content */
     display: flex;
     flex-direction: column;
