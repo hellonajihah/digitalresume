@@ -1,18 +1,27 @@
-// Ensure DOM is fully loaded before attaching event listeners
+ // Ensure DOM is fully loaded before attaching event listeners
 document.addEventListener('DOMContentLoaded', () => {
-    // Define elements once
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navLinkAnchors = document.querySelectorAll('.nav-links a');
     const downloadBtn = document.querySelector('.download-btn');
+    const sections = document.querySelectorAll('section');
+    const navbar = document.querySelector('.navbar');
 
-    // Hamburger Menu Toggle
+    // Hamburger Menu Toggle with Keyboard Support
     if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
+        const toggleMenu = () => {
             const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
             hamburger.setAttribute('aria-expanded', !isExpanded);
+        };
+
+        hamburger.addEventListener('click', toggleMenu);
+        hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleMenu();
+            }
         });
 
         // Close Menu When Clicking Outside
@@ -25,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth Scrolling for Navigation Links
+    // Smooth Scrolling with Offset
     if (navLinkAnchors) {
         navLinkAnchors.forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -33,7 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    const offset = 60; // Adjust based on navbar height
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: elementPosition - offset,
+                        behavior: 'smooth'
+                    });
                 }
                 // Close mobile menu on link click
                 if (navLinks && hamburger) {
@@ -45,33 +59,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Scroll-Activated Navigation Bar
-    window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
+    // Debounced Scroll Event for Performance
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(func, wait);
+        };
+    }
+
+    window.addEventListener('scroll', debounce(() => {
         const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
         navbar.classList.toggle('scrolled', scrollPosition > 50);
-    });
 
-    // Active Link Indicator
-    if (navLinkAnchors) {
-        const sections = document.querySelectorAll('section');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinkAnchors.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
         });
-    }
+        navLinkAnchors.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    }, 100));
 
     // Fade-in Animation on Scroll
     const fadeSections = document.querySelectorAll('.fade-in');
