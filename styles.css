@@ -490,8 +490,8 @@ em {
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 1000vh; /* Slightly shorter on mobile */
-        padding: 2rem 2rem;
+        min-height: 100vh; /* Slightly shorter on mobile */
+        padding: 3rem 2rem;
         background-attachment: scroll;
     }
     /* other styles */
