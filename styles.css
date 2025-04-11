@@ -498,7 +498,7 @@ em {
         height: 200px;
     }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .profile-img {
         width: 150px; /* Smaller size for phones */
         height: 150px;
