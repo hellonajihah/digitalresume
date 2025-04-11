@@ -513,7 +513,9 @@ em {
         font-size: 1rem;
         }
     .title {
-        font-size: 4rem; /* Smaller size for mobile, ~16px */
+        font-size: 1.25rem; /* ~20px, assuming 16px root */
+        color: #ccc;
+        margin-bottom: 1rem;
     }
     }
 
