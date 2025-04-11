@@ -382,7 +382,7 @@ footer {
 .education-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     width: 100%;
 }
 
@@ -403,7 +403,7 @@ footer {
 
 .education-content h3 {
     margin-top: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     line-height: 1.4;
 }
 
