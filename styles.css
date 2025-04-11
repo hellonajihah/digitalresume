@@ -511,9 +511,14 @@ em {
     .download-btn {
         padding: 0.8rem 2rem;
         font-size: 1rem;
+       
+        .download-btn:active,
+        .download-btn:focus {
+        outline: none; /* Removes the white border */
         }
+   
     .title {
-        font-size: 1.25rem; /* ~20px, assuming 16px root */
+        font-size: 1.2rem; /* ~20px, assuming 16px root */
         color: #ccc;
         margin-bottom: 1rem;
     }
@@ -549,14 +554,6 @@ em {
         font-size: 1.1rem;
     }
     
-@media (max-width: 768px) {
-    .download-btn {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
-    }
-    .download-btn:active,
-    .download-btn:focus {
-        outline: none; /* Removes the white border */
-    }
+
     
 }
