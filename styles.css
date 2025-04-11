@@ -498,7 +498,7 @@ em {
         height: 200px;
     }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .profile-img {
         width: 150px; /* Smaller size for phones */
         height: 150px;
@@ -532,7 +532,7 @@ em {
 
 @media (max-width: 600px) {
     .nav-brand {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
 
     .social-links a {
