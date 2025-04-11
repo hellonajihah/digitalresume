@@ -167,7 +167,7 @@ body {
 .hero {
     min-height: 100vh; /* Use min-height instead of fixed height */
     height: auto;
-    padding: 4rem 2rem; /* Add padding */
+    padding: 1rem 2rem; /* Add padding */
     gap: 1.5rem; /* Add gap between flex items */
     display: flex;
     flex-direction: column;
