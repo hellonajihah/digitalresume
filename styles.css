@@ -164,10 +164,9 @@ body {
 }
 
 
-/* Hero Section */
 .hero {
-    min-height: 100vh;
-    height: auto;
+    min-height: 100vh; /* Minimum height of full viewport, can grow if needed */
+    height: auto;      /* Allows the section to expand based on content */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,9 +176,8 @@ body {
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(64, 77, 32, 0.2)),
         url('background.jpg') center/cover fixed;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; removed to prevent clipping */
     color: #f5f5f5;
-    padding: 4rem 1rem;
 }
 
 @keyframes fadeIn {
