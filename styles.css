@@ -498,6 +498,12 @@ em {
         height: 200px;
     }
 
+@media (max-width: 600px) {
+    .profile-img {
+        width: 150px; /* Smaller size for phones */
+        height: 150px;
+    }
+
     .download-btn {
         padding: 0.8rem 2rem;
         font-size: 1rem;
