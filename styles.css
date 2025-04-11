@@ -548,4 +548,15 @@ em {
     .social-links a {
         font-size: 1.1rem;
     }
+    
+@media (max-width: 768px) {
+    .download-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    .download-btn:active,
+    .download-btn:focus {
+        outline: none; /* Removes the white border */
+    }
+    
 }
