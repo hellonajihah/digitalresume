@@ -417,7 +417,7 @@ footer {
 .publication-list li,
 .awards-list li,
 .certificates-list li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     text-align: justify;
     text-justify: inter-word;
     overflow-wrap: break-word; /* Added to handle long words and URLs */
