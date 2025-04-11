@@ -449,7 +449,7 @@ em {
 }
 
 /* Responsive Design */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
