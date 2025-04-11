@@ -488,10 +488,11 @@ em {
 
 @media (max-width: 768px) {
     .hero {
-        height: 160vh;
+        /* height: 100vh; removed, inherited min-height: 100vh and height: auto work fine */
         background-attachment: scroll;
     }
-    
+    /* other styles */
+}
     .profile-img {
         width: 200px;
         height: 200px;
