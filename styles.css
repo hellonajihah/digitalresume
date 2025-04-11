@@ -122,7 +122,7 @@ body {
     width: 0;
     height: 1px;
     background: #fcbf49;
-    transition: width 0.4s ease;
+    transition: width 0.6s ease;
 }
 
 .nav-links a:hover,
@@ -165,7 +165,7 @@ body {
 
 
 .hero {
-    min-height: 100vh; /* Minimum height of full viewport, can grow if needed */
+    min-height: 160vh; /* Minimum height of full viewport, can grow if needed */
     height: auto;      /* Allows the section to expand based on content */
     display: flex;
     flex-direction: column;
