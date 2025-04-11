@@ -500,8 +500,8 @@ em {
 
 @media (max-width: 600px) {
     .profile-img {
-        width: 150px; /* Smaller size for phones */
-        height: 150px;
+        width: 100px; /* Smaller size for phones */
+        height: 100px;
     }
 
     .download-btn {
