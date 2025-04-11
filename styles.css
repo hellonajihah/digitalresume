@@ -449,7 +449,7 @@ em {
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .hamburger {
         display: flex;
     }
@@ -498,7 +498,7 @@ em {
         height: 200px;
     }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .profile-img {
         width: 150px; /* Smaller size for phones */
         height: 150px;
