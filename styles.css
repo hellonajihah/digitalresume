@@ -227,16 +227,16 @@ body {
 .title {
     font-size: 1.25rem;
     color: #ccc;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .intro {
     max-width: 768px;
     text-align: justify;
-    margin-top: 2.0rem;
+    margin-top: 1.5rem;
     line-height: 1.75;
     color: #ddd;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Download Button Styling */
