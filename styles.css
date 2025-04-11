@@ -491,7 +491,7 @@ em {
 @media (max-width: 768px) {
     .hero {
         min-height: 100vh; /* Slightly shorter on mobile */
-        padding: 3rem 2rem;
+        padding: 3rem 4rem;
         background-attachment: scroll;
     }
     /* other styles */
@@ -501,7 +501,7 @@ em {
         height: 200px;
     }
 
-@media (max-width: 7680px) {
+@media (max-width: 768px) {
     .profile-img {
         width: 150px; /* Smaller size for phones */
         height: 150px;
