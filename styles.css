@@ -381,7 +381,7 @@ footer {
 .education-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 100%;
 }
 
@@ -416,7 +416,7 @@ footer {
 .publication-list li,
 .awards-list li,
 .certificates-list li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: justify;
     text-justify: inter-word;
     overflow-wrap: break-word; /* Added to handle long words and URLs */
@@ -491,7 +491,7 @@ em {
 @media (max-width: 768px) {
     .hero {
         min-height: 90vh; /* Slightly shorter on mobile */
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
         background-attachment: scroll;
     }
     /* other styles */
