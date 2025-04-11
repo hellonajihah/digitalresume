@@ -491,7 +491,7 @@ em {
 @media (max-width: 768px) {
     .hero {
         min-height: 100vh; /* Slightly shorter on mobile */
-        padding: 5rem 1rem;
+        padding: 5rem 2rem;
         background-attachment: scroll;
     }
     /* other styles */
