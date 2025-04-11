@@ -403,13 +403,7 @@ footer {
     line-height: 1.4;
 }
 
-.justified {
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.6;
-    margin: 0.8rem 0;
-}
-
+/* Publication, Awards, Certificates Lists */
 .publication-list, 
 .awards-list, 
 .certificates-list {
@@ -420,6 +414,16 @@ footer {
 .awards-list li,
 .certificates-list li {
     margin-bottom: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-wrap: break-word; /* Added to handle long words and URLs */
+}
+
+.justified {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    margin: 0.8rem 0;
 }
 
 .entry h3 {
@@ -507,6 +511,14 @@ em {
     
     .education-content {
         width: 100%;
+    }
+
+    .publication-list li,
+    .awards-list li,
+    .certificates-list li {
+        text-align: justify;
+        text-justify: inter-word;
+        overflow-wrap: break-word; /* Ensure it applies on mobile */
     }
 }
 
